@@ -1,0 +1,6 @@
+Type: Jupyter Notebook Extension
+Compatibility: 6.x
+Name: Default Altair Cell
+Main: default-altair-cell.js
+Link: README.md
+Description: Adds and runs a cell with the necessary setup to use Altair in a new notebook.
