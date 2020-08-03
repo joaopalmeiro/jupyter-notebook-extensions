@@ -1,4 +1,4 @@
-define(["base/js/namespace", "base/js/events"], function (Jupyter, events) {
+define(["base/js/namespace", "base/js/events"], function (Jupyter) {
   var addDefaultAltairCell = function () {
     Jupyter.notebook.insert_cell_above("code").set_text(`%load_ext autoreload
 %autoreload 2
@@ -125,7 +125,7 @@ set_alt_aesthetic()`);
       Jupyter.keyboard_manager.actions.register(
         {
           help: "Add Default Altair Cell",
-          icon: "fa-bar-chart",
+          icon: "fa-header",
           handler: addDefaultAltairCell,
         },
         "add-default-altair-cell",
